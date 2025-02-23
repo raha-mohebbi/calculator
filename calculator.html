@@ -1,33 +1,46 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>calculator</title>
+<link rel="stylesheet" href="calculator.css">
+
 </head>
+
 <body>
-    <div id="calculator">
-        <input id="display" readonly>
-        <div id="keys">
-            <button onclick="ondisplay('+')">+</button>
-            <button onclick="ondisplay('7')">7</button>
-            <button onclick="ondisplay('8')">8</button>
-            <button onclick="ondisplay('9')">9</button>
-            <button onclick="ondisplay('-')">-</button>
-            <button onclick="ondisplay('4')">4</button>
-            <button onclick="ondisplay('5')">5</button>
-            <button onclick="ondisplay('6')">6</button>
-            <button onclick="ondisplay('*')">*</button>
-            <button onclick="ondisplay('1')">1</button>
-            <button onclick="ondisplay('2')">2</button>
-            <button onclick="ondisplay('3')">3</button>
-            <button onclick="ondisplay('/')">/</button>
-            <button onclick="ondisplay('0')">0</button>
-            <button onclick="ondisplay('.')">.</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="cleardisplay()">c</button>
-        </div>
+    
+<div id="calculator">
+    <input class="displaybox" id="display" readonly>
+    <div class="buttonsclass" id="keys">
+        <button onclick="cleardisplay()">C</button>
+        <button onclick="ondisplay('1')">1</button>
+        <button onclick="ondisplay('2')">2</button>
+        <button onclick="ondisplay('3')">3</button>
+        <br>
+        <button onclick="ondisplay('-')">-</button>
+        <button onclick="ondisplay('4')">4</button>
+        <button onclick="ondisplay('5')">5</button>
+        <button onclick="ondisplay('6')">6</button>
+        <br>
+        <button onclick="ondisplay('*')">*</button>
+        <button onclick="ondisplay('7')">7</button>
+        <button onclick="ondisplay('8')">8</button>
+        <button onclick="ondisplay('9')">9</button>
+        <br>
+        <button onclick="ondisplay('/')">/</button>
+        <button onclick="ondisplay('0')">0</button>
+        <button onclick="ondisplay('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <br>
+        <button onclick="ondisplay('+')">+</button>
+        <button onclick="ondisplay('00')">00</button>
+        <button onclick="ondisplay('000')">000</button>
+        <button class="historyclass" onclick="popup()">History</button>
     </div>
+</div>
 </body>
 <script src="calculator.js"></script>
+
 </html>

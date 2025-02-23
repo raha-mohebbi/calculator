@@ -1,0 +1,24 @@
+.buttonsclass button {
+    margin-top: 1%;
+    background-color: greenyellow;
+    border: 0.8rem groove green;
+    width: 22%;
+    height: 8vh;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+   
+}
+
+.buttonsclass {
+    margin-top: 1%;
+}
+
+.displaybox {
+    width: 90%;
+    height: 8vh;
+    border: 0.8rem groove green;
+    background-color: greenyellow;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+}
